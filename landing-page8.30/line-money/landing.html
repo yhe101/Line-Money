@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+   <div id="title-section" >
+     <div class="container">
+     <nav>
+       <ul >
+       <li class="active"><a href="#">Home</a></li>
+       <li ><a href="#">Services</a></li>
+       <li ><a href="#">Exchange Rates</a></li>
+       <li ><a href="#">My Line Money</a></li>
+       </ul>
+     </nav>
+     <hr>
+     <div class="button-group">
+    <button class="green-button">Log in</button>
+    <button class="sign-button">Sign up</button>
+     </div>
+   
+
+   <div class="head">
+   <h4>Next Generation</p>
+   <h2>ONLINE CURRENCY EXCHANGE</h2>
+   </div>
+
+    <!-- main part of the title section -->
+   <div class="row-fluid head-main">
+    <div class="span5">
+      <p>Linemoney is a money exchange infomration platform. We provides real time matching, or 
+      enable users to bid for prices. Publish your money exchange information today!</p>
+      <p class="learn-link"><a href="#" >Learn More &nbsp<span class="arrow-right"></span></a>
+      <p>Money exchange easy, fast, low cost, secure.</p>
+       <p>Members can share profits and bid for lower prices.</p>
+        <p>Agents can build teams to rollup profits.</p>
+    </div>
+
+    <div class="span7 line-form">
+
+    <div class="row-fluid input-box">
+    <input class="send-input" >
+    <label class="label-input">Your send</label>
+    <select class="select-amount1">
+      <option>USD</option>
+      <option>CNY</option>
+      <option>GBP</option> 
+    </select>
+    </div>
+    <div class="row-fliud input-box">
+    <input class="amount-input">
+    <label class="label-input2">Recipient gets</label>    
+    <select class="select-amount2">
+      <option>USD</option>
+      <option>CNY</option>
+      <option>GBP</option> 
+    </select>
+    </div>
+    <p class="rate-number">Today's exchange market rate:<span> 6.6676</span></p>
+    <div class="checkbox use-checkbox">
+      <label><input type="checkbox" value="">Sounds good, use market rate!</label>
+    </div>
+   <hr>
+   <div class="rate-form">
+    <p> I want to use my own rate:</p>
+    <div class="row-fluid ">
+     <div class="own-rate">
+    My Own Rate
+    </div>
+    <input placeholder="Enter your own rate here">
+    </div>
+        <div class="row-fluid">
+        <div class="service-type">Service Type</div>
+    <select>
+      <option>Best insurance service</option>
+      <option>15 minutes service</option>
+      <option>1 hour service</option>
+       <option>1 day service</option>
+        <option>2 days service</option>
+         <option>3 days service</option>
+          <option>5 days service</option>
+                <option>Best insurance service (Allow Split)</option>
+      <option>15 minutes service (Allow Split)</option>
+      <option>1 hour service (Allow Split)</option>
+       <option>1 day service (Allow Split)</option>
+        <option>2 days service (Allow Split)</option>
+         <option>3 days service (Allow Split)</option>
+          <option>5 days service (Allow Split)</option>
+    </select>
+    </div>
+    <div class="fade-p">
+   <p>Estimated Amount:<span class="e-aount">66.66</span></p>
+   <p >Estimated Fee:<span class="e-fee">1.22</span></p>
+  <p >With Bank Rate Of:<span class="e-rate">0.2%</span></p>
+     </div>
+   <p class="saved">You Saved:<span class="saved"></span>1.2</p>
+
+   </div>
+
+    <button onclick="$('#compare').modal('show');"class="green-button">Compare</button>
+  <button type="submit" class="green-button next-button">Next</button>  
+
+
+    </div>
+    </div>
+
+    </div> 
+  </div>
+
+<!-- pop up -->
+<div id="compare" class="modal hide fade">   
+     <div class="row-fluid">
+    <div class="span6" id="line-cost">
+    <div class="grey-title">
+    <h3>Line Money</h3>
+    <svg height="100" width="100">
+  <circle cx="50" cy="50" r="45" stroke="white" stroke-width="8" fill=" #f2f1f1" />
+
+</svg>
+    <span class="big-num">233.04</span>
+    </div>
+    <div class="compare-hr">
+    <hr>
+    </div>
+    <p>LineMoney charges as little as possible</p>
+        <div><span class="red-num">100000 </span>USD</div>
+    <div class="compare-hr">
+    <hr>
+    </div>
+    <p>LineMoney uses the real exchange rate</p>
+    <div class="red-num">6.6684</div>
+        <div class="compare-hr">
+    <hr>
+    </div>
+    <p>LineMoney payout</p>
+    <div><span class="red-num">6658.38 </span>CNY</div>
+    </div>
+
+
+
+    <div class="span6" id="bank-cost">
+    <div class="grey-title">
+    <h3>Bank Cost</h3>
+    <svg height="100" width="100">
+  <circle cx="50" cy="50" r="45" stroke="white" stroke-width="8" fill=" #f2f1f1" />
+
+</svg>
+    <span class="big-num2">244.04</span>
+    </div>
+    <div class="compare-hr">
+    <hr>
+    </div>
+    <p>Banks hide their cost with fee</p>
+        <div><span class="red-num">10.8 </span>USD</div>
+    <div class="compare-hr">
+    <hr>
+    </div>
+    <p>Banks set their own exchange rate</p>
+    <div class="red-num">6.4350</div>
+        <div class="compare-hr">
+    <hr>
+    </div>
+    <p>Banks payout</p>
+    <div><span class="red-num">6425.33.38 </span>CNY</div>
+    </div>
+
+     </div>
+    
+    <div class="c-btn">
+        <button href="#" class="green-button" data-dismiss="modal" >Back</button>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+<!-- benefits -->
+<div id="benefits">
+   <div class="container">
+<!--    <div class="row-fluid be-logo">
+   <div class="span3 be-logo1">
+   Secure
+   </div>
+   <div class="span2 be-logo2">
+   Fast
+   </div>
+   <div class="span5 be-logo3">
+   Save More
+   </div>
+   </div> -->
+   <h3>Special Benefits</h3>
+   <p>As a member, you have opportunities to create profits by bidding on low 
+   exchange rate.</p>
+  
+   <p>As an agent, you can grow your customers and earn profits from each transaction of 
+   your customers.</p>
+   
+   <p>As an agent, you can roll up three levels of your team members' profts.</p>
+   </div>
+</div>
+
+
+
+<!-- process -->
+<div id="process-section">
+  <div class="container">
+     <h2>How Line Money Works</h2>
+     <hr>
+
+     <div class="row-fluid title-media">
+     <div class="span3">
+      <div class="ic-holder">
+     <img  src="img/icon/Screen Shot1.png" alt="logo">
+     </div>
+     <h6>Register</h6>
+     <p>Register an account to start using Line Money currency exchange services.</p>
+     </div>
+
+     <div class="span1 hr-line">
+     <hr>
+     </div>
+      
+      
+      <div class="span3">
+      <div class="ic-holder">
+     <img  src="img/icon/Screen Shot 2.png" alt="logo">
+     </div>
+     <h6>Get A Quote</h6>
+     <p>Use Line Money calculator to find the best exchange rate.</p>
+     </div>
+
+     <div class="span1 hr-line">
+     <hr>
+     </div>
+
+      <div class="span3">
+       <div class="ic-holder">
+     <img src="img/icon/Screen Shot 3.png" alt="logo">
+     </div>
+     <h6>Money Exchange</h6>
+     <p>Submit your information and choose time and date online to finish it up.</p>
+     </div>
+     </div>
+      <hr>
+      <button class="green-button">Line Money Service</button>
+   </div>
+</div>
+
+
+
+<!-- why -->
+<div id="why">
+  <div class="container">
+     <h2>Why Line Money</h2>
+     <div class="row-fluid title-media happy">
+     <div class="span6 pic">
+       <img src="img/background/Happy-customer-on-social-mediaa.jpg">
+     </div>
+    <div class="span6">
+       <h4>Our Happy Customers</h4>
+       <hr>
+       <p>Take a look what other customers think about Line Money</p>
+       <button class="button-why"> See Their Stories</button>
+     </div>
+    </div>
+
+
+   <div class="row-fluid title-media service">
+    <div class="span6">
+       <h4>Customer Service</h4>
+       <hr>
+       <p>Use live chat or phone call to get helps for any questions.</p>
+       <button class="button-why">Live Chat</button>
+        <button class="button-why">Call Us</button>
+     </div>
+     <div class="span6 pic">
+       <img src="img/background/NLP-course-for-customer-service.jpg">
+     </div>
+     </div>
+
+    <div class="row-fluid title-media product">
+     <div class="span6 pic">
+       <img src="img/background/Happy-customer-on-social-mediaa.jpg">
+     </div>
+    <div class="span6">
+       <h4>Products & Services</h4>
+       <hr>
+       <p>To know more about service fee and money exchange information, click the button below</p>
+       <button class="button-why"> Full List</button>
+     </div>
+    </div>
+
+
+   </div>  
+</div>
+
+
+<!-- partner -->
+<div id="partner">
+  <div class="container">
+   <h2>Partners</h2>
+   <div class="row-fluid">
+     <div class="span3">
+      <img src="img/logo/China-Construction-Bank-logo.png" alt="logo">
+     </div>
+      <div class="span3">
+      <div class="img-holder-2">
+      <img src="img/logo/Paypal_logo-5.png" alt="logo">
+      </div>
+     </div>
+          <div class="span3">
+           <div class="img-holder-3">
+      <img src="img/logo/Logo_PNC.png" alt="logo">
+     </div>
+     </div>
+          <div class="span3">
+           <div class="img-holder-4">
+      <img src="img/logo/union-bank-logo.png" alt="logo">
+      </div>
+     </div>
+
+   </div>
+  </div>
+</div>
+
+
+
+<!-- member -->
+<div id="member">
+  <div class="container">
+   <h4>Join our free membership and learn how to do currency exchange and 
+   transfer money online with Line Money</h4>
+   <p>It's easier than you think</p>
+   <button class="green-button">join free membership</button>
+   </div>
+   </div>
+
+
+<!-- footer -->
+<div id="footer">
+  <p>Copyright 2016 @ LineMoney</p>
+</div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

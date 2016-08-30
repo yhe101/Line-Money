@@ -1,0 +1,601 @@
+/*#148681*/
+
+.container {
+	width: 505px;
+	position:absolute;
+	margin: auto;
+	left: 0; right:0;
+	color:white;
+}
+#title-section {
+	height: 700px;
+	background: url("/line-money/img/background/skyline-buildings-new-york-skyscrapers.jpg");	
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-position: center center;
+}
+#title-section::before{
+	background-color: rgba(0,0,0,0.6);
+	content:" ";
+	display:block;
+	width: 100%;
+	height: 700px;
+	position:absolute;
+}
+.active a {
+	font-weight: 700;
+}
+#title-section nav{
+	margin: 10px 0 5px 0;
+}
+#title-section nav ul {
+	list-style-type: none;
+	margin-bottom: 0px;
+	text-align: center;
+}
+#title-section nav ul li {
+	display: inline;
+	height: 10px;
+}
+#title-section nav ul li::after{
+	content:"|";
+	margin: 0 10px;
+}
+#title-section nav ul li:last-child::after {
+   content:"";
+}
+#title-section nav ul li a{
+	color: white;
+	font-size: 11px;
+}
+#title-section nav ul li a:hover{
+	color:#148681;
+	text-decoration: none;
+}
+#title-section hr {
+	margin-top: 0px;
+	background-color: #148681;
+	height: 1px;
+	border: 0;
+}
+#title-section .button-group {
+	display:block;
+	text-align: right;
+	margin-top: 60px;
+}
+.green-button, .sign-button {
+	background-color: #1d8f8a;
+	width: 70px;
+	height: 25px;
+	color: white;
+	border-radius: 5px;
+	border:none;
+	font-size: 12px;	
+}
+.sign-button {
+	background-color: #0c72d8;
+	margin-left: 5px;
+}
+.head h4 {
+	margin: 40px 0px 0px 2px;
+	color: #1d8f8a;
+}
+.head h2 {
+	font-size: 27px;
+}
+.head-main.row-fluid {
+   margin-top: 90px;
+}
+.head-main.row-fluid .span6:first-child{
+	padding-right: 10px;
+}
+.head-main img {
+	width: 60px;
+}
+.head-main h4 {
+	display:inline;
+	margin-left:20px;
+	position: relative;
+	top: 12px;
+}
+.head-main p {
+	padding: 2px 0;
+
+
+}
+.head-main .learn-link {
+	padding-top: 0px;
+	margin-top: -12px;
+	font-weight: 600;	
+}
+.head-main .learn-link a{
+	color: white;
+}
+.arrow-right {
+  width: 0; 
+  height: 0; 
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;  
+  border-left: 5px solid white;
+  display: inline-block;
+}
+
+.line-form {
+	height: 380px;
+	background-color: black;
+	padding: 20px 0 0 0;
+	border-radius: 2px;
+	margin-top: -10px;
+	padding-left: 25px;
+}
+.line-form .send-input, .amount-input {
+   width:160px;
+   border: 0px;
+   height: 41px;
+   padding-top: 10px;
+     padding-left: 7px;
+   border-bottom: 1px solid grey;
+   box-sizing: border-box;
+     -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+}
+.amount-input{
+	border-bottom: 0px;
+	height:40px;
+}
+.input-box{
+	position: relative;
+}
+.label-input,.label-input2 {
+	color:#49d0fd;
+	position: absolute;
+	top:0px;
+	left:7px;
+	z-index: 2;
+	font-size: 10px;
+}
+.label-input2{
+	color:grey;
+}
+.line-form .select-amount1, .select-amount2{
+   width:80px;
+   height:41px;
+   margin-left: -5px;
+   margin-bottom: 0px;
+   border:0px;
+   border-bottom: 1px solid grey;
+   border-radius: 0px;
+   box-sizing: border-box;
+     -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  background-color:#0c6c68;
+  color:white;
+}
+.select-amount2{
+	margin-top: 0px;
+	border-bottom: 0px;
+	height:40px;
+}
+.rate-number{
+	margin-bottom: 0px;
+}
+#title-section .line-form hr{
+	background-color: white;
+	width: 250px;
+	margin-bottom: 0px;
+}
+.rate-form{
+	padding-top: 10px;
+}
+.own-rate, .service-type {
+box-sizing:border-box;
+background-color:#0c6c68;
+font-size: 11px;
+border:1px solid grey;
+width: 100px;
+height: 33px;
+display:inline-block;
+text-align: center;
+padding-top: 6px;
+}
+.own-rate +input {
+	box-sizing: border-box;
+	width: 140px;
+	height: 33px;
+	margin-left: -5px;
+	margin-top: -1px;
+	padding-left: 5px;
+	font-size: 11px;
+	display: inline-block;
+	border:none;
+}
+.service-type{
+    position:relative;
+    top: -4px;
+    width: 99px;
+}
+.service-type +select{
+	border-radius: 0px;
+	width: 141px;
+	height: 33px;
+	box-sizing: border-box;
+	margin-left: -5px;
+	padding-left: 0px;
+	font-size: 11px;
+}
+.rate-form p{
+	line-height: 5px;
+}
+.fade-p p{
+	color: grey;
+}
+.fade-p span {
+	color: white;
+	margin-left: 5px;
+}
+.saved{
+	font-size: 18px;
+	font-weight: 700;
+}
+.head-main .green-button {
+	width: 107px;
+	height: 30px;
+	margin-top: 5px;
+	margin-right: 20px; 
+	font-size: 11px;
+}
+.head-main .next-button{
+	margin-right: 0px;
+}
+
+
+@media only screen and (max-width:800px){
+body {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+ #title-section {
+ 	text-align: center;
+ 	width: 100%;
+ 	height: 1030px;
+ }
+ #title-section::before {
+ 	height:1030px;
+ }
+ .container {
+ 	width: 300px;
+ 	display: inline-block;
+ }
+ #title-section .button-group{
+ 	margin-top: 30px;
+ 	text-align: center;
+ }
+ .head-main.row-fluid{
+ 	margin-top: 30px
+ }
+ .line-form{
+ 	margin-top: 20px;
+ }
+ .head-main .green-button{
+ 	margin-top: 10px;
+ 	margin-bottom: 20px;
+ }
+}
+
+/*pop up modals*/
+#compare {
+	width: 610px;
+	height: 420px;
+	margin:auto;
+	left:0;right:0;
+}
+#compare .row-fluid {
+	width: 626px;
+}
+#line-cost, #bank-cost {
+	border: 8px solid #dddddd;
+	text-align: center;
+	color:black;
+	padding: 0px;
+}
+#bank-cost.span6{
+	margin-left: 0px;
+}
+svg {
+	
+}
+.grey-title {
+	background-color: #f2f1f1;
+}
+.grey-title h3{
+	margin-top: 0px;
+	padding-top: 20px;
+}
+.big-num , .big-num2{
+	color: #008000;
+	font-size: 20px;
+	position: absolute;
+	top: 120px;
+	left: 120px;
+}
+.big-num2{
+	left: 430px;
+}
+.compare-hr {
+	background-color: #dddddd;
+	height: 2px;
+	border: 0px;
+	width: 100%;
+	margin-top: -20px;
+}
+.red-num{
+	color: red;
+}
+.c-btn {
+	text-align: center;
+	padding-top: 20px;
+}
+.c-btn .green-button {
+	width: 100px;
+	height: 30px;
+	background-color: black;
+}
+
+
+/*benefits*/
+#benefits{
+	height: 350px;
+	background: url("/line-money/img/background/background_aug27.jpg");	
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-position: center center;
+}
+#benefits .container{
+	width: 250px;
+	margin-top: 70px;
+	margin-left: 47%;
+	padding-top: 40px;
+	color: black;
+	line-height: 18px;
+	font-size: 12px;
+}
+/*.be-logo {
+	margin-top: 5px;
+	font-size: 10px;
+}
+.be-logo1 {
+   padding-left: 5px;
+}
+.be-logo2{
+	padding-left:20px;
+}
+.be-logo3{
+   padding-left: 35px;  
+}*/
+
+/*process*/
+#process-section {
+	height: 500px;
+	background: url("/line-money/img/background/man-hands-working-technology.jpg");	
+	background-size: cover;
+	background-repeat:no-repeat;
+	background-position: center bottom;
+}
+#process-section::before {
+	background-color: rgba(20,134,129,0.8);
+	content:" ";
+	width: 100%;
+	height: 500px;
+	position:absolute;
+}
+#process-section .container {
+	text-align: center;
+}
+#process-section h2 {
+	margin-top: 30px;
+}
+#process-section hr {
+	background-color: black;
+	height:1px;
+	border:none;
+}
+#process-section .span3, #process-section .span1{
+	margin-left: 0px;
+}
+#process-section .ic-holder{
+	border-radius: 50px;
+	border: 2px dotted white;
+	height: 100px;
+	width: 100px;
+	display: inline-block;
+}
+#process-section img{
+	height:70px;
+    margin: 17px 0 0 4px;
+}
+#process-section p {
+	font-size: 12px;
+}
+#process-section .hr-line{
+	width: 57px;
+	margin: 0px 10px;
+}
+#process-section .hr-line hr{
+	margin-top: 45px;
+	background-color: #1936b7;
+	border: 0px;
+	height: 7px;
+}
+
+#process-section .green-button {
+	background-color: black;
+	width: 250px;
+	height: 30px;
+	margin-top: 10px;
+}
+@media only screen and (min-width:950px){
+#process-section .span3 {
+	width: 116.53px;
+}
+}
+@media only screen and (max-width:800px){
+#process-section {
+	height:850px;
+}
+#process-section::before {
+	height:850px;
+}	
+#process-section h2{
+	font-size: 25px;
+}
+#process-section .hr-line {
+	display: none;
+}
+}	
+
+
+/*why part*/
+#why {
+	text-align: center;
+	height: 750px;
+	background-color: #e8e8e8;
+}
+#why h2 {
+	margin-top: 30px;
+	color: #097b84;
+}
+#why .title-media {
+	color: black;
+}
+#why .title-media hr {
+	background-color: black;
+	height: 1px;
+	border: 0;
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.button-why {
+	background: transparent;
+	border: 1px solid #097b84;
+	color: #097b84;
+	font-size: 10px;
+	border-radius: 3px;
+	height: 30px;
+	width: 100px;
+}
+.happy .button-why {
+	margin-top: 10px;
+}
+.happy .span6:first-child{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#why .service{
+	margin-top: 50px;
+}
+.service .span6:last-child{
+	padding-left: 10px;
+}
+#why .service .button-why {
+	margin: 5px 10px 0px 10px;
+}
+@media only screen and (min-width:950px){
+}
+@media only screen and (max-width:800px){
+ #why {
+ 	height: 750px;
+ }
+ #why .pic{
+ 	display: none;
+ }
+}
+
+
+/*partner*/
+#partner {
+	height: 180px;
+	background-color: #c3c3c3;
+	text-align: center;
+}
+#partner h2 {
+	color: #097b76;
+	margin-top: 30px;
+}
+#partner .span3 {
+	height: 100px;
+}
+#partner .img-holder-2 {
+   padding:20px;
+   margin-top: 13px;
+}
+#partner .img-holder-3 {
+   padding:25px;
+   margin-top: -26px;
+   margin-left: -15px;
+}
+#partner .img-holder-4 {
+   padding:5px;
+   margin-top: 22px;
+}
+@media only screen and (min-width:950px){
+
+}
+@media only screen and (max-width:800px){
+	#partner {display:none;}
+
+}
+
+
+/*member*/
+#member .container {
+	width:400px;
+	text-align: center;
+}
+#member {
+	height: 300px;
+	background-image: url('/line-money/img/background/o-HAPPY-WOMAN-facebook.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+#member::before {
+	background-color: rgba(20,134,129,0.8);
+	content:" ";
+	height: 300px;
+	width: 100%;
+	position:absolute;
+}
+#member h4 {
+	margin-top: 80px;
+	line-height: 25px;
+}
+#member p {
+	font-size: 10px;
+}
+#member button {
+	background-color: black;
+	width:220px;
+	height: 25px;
+	border-radius: 2px;
+	margin-top: 20px;
+}
+@media only screen and (max-width: 800px){
+	#member .container {
+	width:350px;
+}
+
+#footer {
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	background-color: black;
+}
+#footer p{
+	color: white;
+	line-height: 50px;
+	margin-bottom: 0px;
+	font-size: 11px;
+}
