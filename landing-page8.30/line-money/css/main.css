@@ -154,6 +154,7 @@
 	left:7px;
 	z-index: 2;
 	font-size: 10px;
+	 cursor:none;
 }
 .label-input2{
 	color:grey;
@@ -251,6 +252,10 @@ padding-top: 6px;
 
 
 @media only screen and (max-width:800px){
+[class*="span"], .uneditable-input[class*="span"], .row-fluid [class*="span"]{
+	width: 100%;
+	display: block;
+}	
 body {
 	padding-left: 0px;
 	padding-right: 0px;
@@ -274,18 +279,35 @@ body {
  .head-main.row-fluid{
  	margin-top: 30px
  }
- .line-form{
+ .head-main .span5{
+ 	width: 300px;
+ }
+ .head-main .line-form{
+ 	width: 300px;
  	margin-top: 20px;
+ 	padding-left: 6px;
+ }
+ .line-form .checkbox{
+ 	padding-left: 50px;
+ }
+ .line-form .checkbox label{
+ 	float: left;
+ }
+ #title-section .label-input, .label-input2{
+ 	left: 35px;
  }
  .head-main .green-button{
  	margin-top: 10px;
  	margin-bottom: 20px;
  }
+ .rate-form .service-type{
+ 	width: 99px;
+ }
 }
 
 /*pop up modals*/
 #compare {
-	width: 610px;
+	width: 613px;
 	height: 420px;
 	margin:auto;
 	left:0;right:0;
@@ -303,24 +325,23 @@ body {
 	margin-left: 0px;
 }
 svg {
-	
+	position: relative;
 }
 .grey-title {
 	background-color: #f2f1f1;
+	position: relative;
 }
 .grey-title h3{
 	margin-top: 0px;
 	padding-top: 20px;
 }
+
 .big-num , .big-num2{
 	color: #008000;
 	font-size: 20px;
 	position: absolute;
-	top: 120px;
+	top: 110px;
 	left: 120px;
-}
-.big-num2{
-	left: 430px;
 }
 .compare-hr {
 	background-color: #dddddd;
@@ -360,19 +381,35 @@ svg {
 	line-height: 18px;
 	font-size: 12px;
 }
-/*.be-logo {
-	margin-top: 5px;
-	font-size: 10px;
+@media only screen and (max-width:800px){
+	#benefits .container {
+		margin-top: -30px;
+		width: 180px;
+	}
+	#compare {
+		width: 300px;
+	    height: 350px;
+	}
+	#compare .row-fluid{
+		width: 300px;
+		height:350px;
+		overflow-y: scroll;
+	}
+	.big-num, .big-num2{
+		top:110px;
+		left: 105px;
+
+	}
+	.c-btn .green-button{
+		background-color: white;
+		color: black;
+	}
+	#title-section .line-form hr{
+		margin-left: 23px;
+	}
+
+	
 }
-.be-logo1 {
-   padding-left: 5px;
-}
-.be-logo2{
-	padding-left:20px;
-}
-.be-logo3{
-   padding-left: 35px;  
-}*/
 
 /*process*/
 #process-section {
